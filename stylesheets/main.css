@@ -150,6 +150,7 @@
 }
 .icon-top-draw:before {
 	content: "\e603"
+
 }
 .icon-home-ico:before {
 	content: "\e601"
@@ -170,8 +171,9 @@
 	font-family: 'Herr Von Muellerhoff', cursive
 }
 body {
-	color: #515151
+	color: #515151;
 }
+
 .test219{
 	color: white;
 }
@@ -242,6 +244,9 @@ color:#515151
 }
 :-ms-input-placeholder {
 color:#515151
+}
+html{
+	overflow: auto;
 }
 img {
 	-moz-user-select: none;
@@ -403,7 +408,7 @@ input:focus, textarea:focus {
 	transition: all .5s ease
 }
 .btn-gold {
-	background-color: transparent
+	background-color: transparent;
 }
 .btn-gold:active, .btn-gold:focus {
 	background: #c59d5f
@@ -576,6 +581,7 @@ input:focus, textarea:focus {
 	background-color: #fff;
 	position: relative
 }
+  
 .go-down {
 	position: absolute;
 	bottom: 60px;
@@ -598,6 +604,14 @@ input:focus, textarea:focus {
 	color: #e8e8e8;
 	font-size: 40px
 }
+
+
+
+body::-webkit-scrollbar {
+    display: none; /* Verbergt de scrollbar in Chrome, Safari en Opera */
+}
+
+
 .signature {
 	font-size: 50px;
 	text-transform: capitalize;
@@ -730,7 +744,7 @@ input:focus, textarea:focus {
 	background-image: url(../videos/Shoot-2/mewsim00067.jpg)
 }
 .background42 {
-	background-image: url(../img/banner/menu_single.jpg)
+	background-image: url(../videos/Shoot-1/mewsim-v100014.jpg)
 }
 .background43 {
 	background-image: url(../videos/Shoot-2/mewsim00021.jpg)
@@ -2539,6 +2553,20 @@ span.welcome:after {
 	float: none
 
 }
+
+/* Standaardstijl voor de lijn */
+.custom-line {
+	border: none;
+	height: 100px; /* Dikte van de lijn */
+	background-color: #007BFF !important; /* Kleur van de lijn */
+	margin: 20px 0; /* Ruimte boven en onder de lijn */
+	width: 80%; /* Breedte van de lijn */
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px; /* Maakt de randen rond */
+  }
+  
+
 
 .menu-center{
 	height: 100px;

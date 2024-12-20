@@ -13,7 +13,7 @@
 <title>Mewsim | Restaurant</title>
 <!-- Favicon Icons
      ============================================= -->
-<link rel="shortcut icon" href="img/favicon/favicon.ico">
+<link rel="shortcut icon" href="videos/Shoot-1/title-logo.png">
 <!-- Standard iPhone Touch Icon-->
 <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
 <!-- Retina iPhone Touch Icon-->
@@ -97,7 +97,7 @@
         </div>
         <!-- End Slide  -->
         <!-- Slide  -->
-        <div class="swiper-slide" style="background-image: url('videos/Shoot-2/mewsim00001.jpg'); background-position: center top;">
+        <div class="swiper-slide" style="background-image: url('videos/Shoot-1/service.jpg'); background-position: center top;">
           <div class="slider-content ">
             <div class="logo"> <a href="index.html" class="light-logo"><img src="https://usercontent.one/wp/www.mewsim.nl/wp-content/uploads/logodrk-300x69.png?media=1725876042" alt="Logo"></a> </div>
             <!-- #logo end -->
@@ -167,11 +167,11 @@
           <div class="col-md-4 left"> <img src="videos/Shoot-2/mewsim00003.jpg" alt="left intro"> </div>
           <!-- End Left Image -->
           <!-- Art Center Welcome -->
-          <div class="col-md-4 center text-center"> <img src="videos/Shoot-2/mewsim00066.jpg" alt="">
+          <div class="col-md-4 center text-center"> <img src="videos/Shoot-1/zwarte_achtergrond.jpg" alt=".">
             <div class="intro-text" > 
             <!-- Head Title -->
             <div class="head_title">
-                <i class="icon-intro"></i>
+                <img src="videos/Shoot-1/Mewsim_logo.png" style="position: absolute; top: -300px; right: 0px;" alt="">
                 <h1 class="test219">Mewsim</h1>
                 <span class="welcome">Welcome to Mewsim</span>
             </div>
@@ -182,11 +182,11 @@
                 
                 Als hardwerkende ondernemers beseffen zij hoe belangrijk samenzijn en genieten van goed eten en drinken is. Dat alles komt voor hen samen in Mewsim.
                 </p>
-              <a href="about.html" class="btn btn-gold">READ MORE</a> </div>
+              <a href="about.html" class="btn btn-gold">Meer Lezen</a> </div>
           </div>
           <!-- End Art center -->
           <!-- Right Img -->
-          <div class="col-md-4 right"> <img src="videos/Shoot-2/mewsim00025.jpg" alt="right intro img"> </div>
+          <div class="col-md-4 right"> <img src="videos/Shoot-2/mewsim00066.jpg" alt="right intro img"> </div>
           <!-- End Right Img -->
         </div>
       </div>
@@ -211,18 +211,22 @@
           </div>
           <!-- Chef Message text -->
           <!-- Chef Img -->
-          <div class="col-md-6"> <img class="img-responsive" src="videos/Shoot-1/mewsim-v100028.jpg" alt=""> </div>
+          <div class="col-md-6"> <img class="img-responsive" src="videos/Shoot-1/turkse-chef-foto.png" alt=""> </div>
           <!-- End Chef Img -->
         </div>
       </div>
     </section>
     <!-- End Chef Message style 2 -->
+     <!--lijntje begin-->
+     <img style="width: 100%; max-width: 1900px; position: absolute; top: 890px;" src="videos/Shoot-1/test-lijn.png">
+     <!--lijntje eindigen-->
     <!-- Our Menu
     ============================================= -->
-    <section class=" padding-b-40 padding-t-100 text-center"> <i class="icon-intro"></i>
+    <section class=" padding-b-40 padding-t-100 text-center">
       <div class="col-md-8 col-md-offset-2">
+        <img src="videos/Shoot-1/logo-icon.png">
         <h1>ONZE MENU</h1>
-        <span class="welcome">Choose & Taste</span>
+        <span class="welcome" style="color: black;">Choose & Taste </span>
         <div class="clearfix"></div>
         <!-- Menu Content -->
         <div class="menu-content darkgray padding-50 col-md-offset-3 col-md-6">
@@ -233,229 +237,121 @@
       <div class="clearfix"></div>
       <!-- Menu Items
          ============================================= -->
-      <!-- Launch -->
-      <div class="food-banner dark mt60">
-        <div id="menu-parallax">
-          <div class="bcg background11">
-            <div class="bg-transparent">
+<!-- Lunch -->
+<div class="food-banner dark mt60">
+  <div id="menu-parallax">
+      <div class="bcg background11">
+          <div class="bg-transparent">
               <div class="banner-content">
-                <div class="container" >  <i class="icon-home-ico"></i>
-                  <h1>Lunch</h1>
-                </div>
+                  <div class="container"><i class="icon-home-ico"></i>
+                      <h1>Lunch</h1>
+                  </div>
               </div>
               <!-- End Banner content -->
+          </div>
+          <!-- End bg trnsparent -->
+      </div>
+  </div>
+  <!-- Service parallax -->
+</div>
+<div class="container padding-t-60">
+  <div id="menu-items"></div>
+</div>
+
+<script>
+  // JSON-data
+  const menuItems = [
+    {
+      "name": "Menemen",
+      "image": "videos/eten-Fotos/menemen.jpg",
+      "description": "Een pittige Turkse roerei gemaakt met tomaten, paprika en specerijen.",
+      "price": "€7,50"
+    },
+    {
+      "name": "Sucuklu Yumurta",
+      "image": "videos/eten-Fotos/Sucuklu Yumurta.jpg",
+      "description": "Gebakken eieren met Turkse sucuk (vleesworst) en tomaten.",
+      "price": "€6,75"
+    },
+    {
+      "name": "Sigara Böreği",
+      "image": "videos/eten-Fotos/Sigara Böreği.jpg",
+      "description": "Fritters gevuld met kaas en kruiden, vaak geserveerd als ontbijt.",
+      "price": "€9,50"
+    },
+    {
+      "name": "Kahvaltı Tabağı",
+      "image": "videos/eten-Fotos/Kahvaltı Tabağı.avif",
+      "description": "Een traditioneel Turks ontbijt met verschillende kazen, olijven, brood, tomaten, komkommer en worst.",
+      "price": "€11,50"
+    },
+    {
+      "name": "Kuymak",
+      "image": "videos/eten-Fotos/Kuymak.jpg",
+      "description": "Een dunne, knapperige pizza met gehakt, tomaat, ui en kruiden.",
+      "price": "€12,50"
+    },
+    {
+      "name": "Peynirli Pide",
+      "image": "videos/eten-Fotos/pide-with-cheese.avif",
+      "description": "Een brood gevuld met Turkse kaas en kruiden, vaak gegeten bij het ontbijt.",
+      "price": "€11,50"
+    },
+    {
+      "name": "Bal-Kaymak",
+      "image": "videos/eten-Fotos/Bal-Kaymak.jpg",
+      "description": "Vers brood met honing en room.",
+      "price": "€4,50"
+    },
+    {
+      "name": "Kumpir",
+      "image": "videos/eten-Fotos/Kumpir.avif",
+      "description": "Een grote aardappel gevuld met boter, kaas, groenten en ham.",
+      "price": "€7,50"
+    }
+  ];
+
+  const menuContainer = document.getElementById('menu-items');
+
+  menuItems.forEach(item => {
+    const menuItemElement = document.createElement('article');
+    menuItemElement.classList.add('menu-item-list', 'col-md-6', 'col-sm-12');
+    
+    menuItemElement.innerHTML = `
+      <div class="item-img">
+        <div class="overlay_content">
+          <div class="overlay_item"> 
+            <img src="${item.image}" alt="">
+            <div class="overlay">
+              <div class="icons">
+                <div class="button">
+                  <a href="${item.image}" rel="lightbox"><i class="fa fa-expand"></i></a>
+                  <a href="menu_single.html?item=${encodeURIComponent(item.name)}"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <a class="close-overlay hidden">x</a>
+              </div>
             </div>
-            <!-- End bg trnsparent -->
           </div>
         </div>
-        <!-- Service parallax -->
       </div>
-      <div class="container padding-t-60">
-        <!-- Menu Items Masonary Content -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/launch_1.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/launch_1.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Meatloaf Dinner </a> <span class="label red"> spicy</span> <span class="price">$45</span></h3>
-          <p>Two Eggs* cooked to order with Grits, Sawmill Gravy and Homemade Buttermilk Biscuits.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/launch_2.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/launch_2.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Haddock Dinner</a> <span class="price">$33</span></h3>
-          <p>Low-Fat Vanilla Yogurt and Seasonal Fruit topped with our Honey Granola mix of Almonds and Dried Fruit.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/launch_3.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/launch_3.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Country Salad</a> <span class="price">$90</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/launch_4.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/launch_4.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Apple n' Homemade</a> <span class="label"> best seller</span> <span class="price">$56</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/launch_5.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/launch_5.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Fresh Vegetable </a> <span class="price">$80</span></h3>
-          <p>Three Buttermilk Biscuits with Sawmill Gravy and Smoked Sausage Patties or Thick-Sliced Bacon.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/launch_6.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/launch_6.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Country Launch</a> <span class="price">$12</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/launch_7.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/launch_7.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Bowl of Beans</a> <span class="label instock"> New</span> <span class="price">$28</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/launch_8.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/launch_8.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Chicken Tenderloin</a> <span class="price">$79</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- End Menu Content -->
-      </div>
-      <!-- End Launch -->
+      <h3><a href="menu_single.html?item=${encodeURIComponent(item.name)}">${item.name}</a> <span class="price">${item.price}</span></h3>
+      <p>${item.description}</p>
+    `;
+
+    menuContainer.appendChild(menuItemElement);
+  });
+
+  function openNewPage(itemName) {
+      window.location.href = `menu_single.html?item=${encodeURIComponent(itemName)}`;
+  }
+</script>
+
+
+<!-- End Lunch -->
+
       <!-- Dinner -->
+      
+      
       <div class="food-banner dark mt60" >
         <div id="menu-parallax2">
           <div class="bcg background12">
@@ -472,219 +368,108 @@
         </div>
         <!-- Service parallax -->
       </div>
-      <div class="container padding-60">
-        <!-- Menu Items Masonary Content -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/dinner_1.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/dinner_1.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
+    <div class="container padding-t-60">
+      <div id="menu-items2"></div>
+    </div> 
+
+
+      <script>
+        // JSON-data
+        const menuItemsa = [
+        {
+      "name": "Adana Kebab",
+      "image": "videos/eten-Fotos/Adana Kebab.jpg",
+      "price": "€15,00",
+      "description": "Gegrild lamsvlees kebab met specerijen en pitabrood."
+  },
+  {
+      "name": "Iskender Kebab",
+      "image": "videos/eten-Fotos/iskender kebab.avif",
+      "price": "€18,00",
+      "description": "Gebroken kebab geserveerd op pita met tomatensaus en yoghurt."
+  },
+  {
+      "name": "Tavuk Shish",
+      "image": "videos/eten-Fotos/tavuk shish.avif",
+      "price": "€20,00",
+      "description": "Gegrilde kipspies met groenten."
+  },
+  {
+      "name": "Kuzu Tandir",
+      "image": "videos/eten-Fotos/Kuzu Tandir.jpg",
+      "price": "€22,00",
+      "description": "Langzaam gegaard lamsschenkel met kruiden en groenten."
+  },
+  {
+      "name": "Lahmacun",
+      "image": "videos/eten-Fotos/lahmacun.avif",
+      "price": "€14,00",
+      "description": "Een Turkse pizza met gehakt en groenten."
+  },
+  {
+      "name": "Köfte",
+      "image": "videos/eten-Fotos/Köfte.jpg",
+      "price": "€17,00",
+      "description": "Gehaktballetjes gekruid met kruiden en geserveerd met salade."
+  },
+  {
+      "name": "Pide",
+      "image": "videos/eten-Fotos/Pide.avif",
+      "price": "€19,00",
+      "description": "Een Turks brood met diverse toppings zoals kaas, ei en kruiden."
+  },
+  {
+      "name": "Dolma",
+      "image": "videos/eten-Fotos/Dolma.jpg",
+      "price": "€21,00",
+      "description": "Gevulde druivenbladeren met rijst, kruiden en kruiden."
+  }
+  ];
+      
+        const menuContainera = document.getElementById('menu-items2');
+      
+        menuItemsa.forEach(item => {
+          const menuItemElement = document.createElement('article');
+          menuItemElement.classList.add('menu-item-list', 'col-md-6', 'col-sm-12');
+          
+          menuItemElement.innerHTML = `
+            <div class="item-img">
+              <div class="overlay_content">
+                <div class="overlay_item"> 
+                  <img src="${item.image}" alt="">
+                  <div class="overlay">
+                    <div class="icons">
+                      <div class="button">
+                        <a href="${item.image}" rel="lightbox"><i class="fa fa-expand"></i></a>
+                        <a href="menu_single.html?item=${encodeURIComponent(item.name)}"><i class="fa fa-shopping-cart"></i></a>
+                      </div>
+                      <a class="close-overlay hidden">x</a>
+                    </div>
+                  </div>
                 </div>
-                <!-- End Overlay -->
               </div>
-              <!-- End Overlay Item -->
             </div>
-          </div>
-          <h3><a href="menu_single.html">Lamb Kebab</a> <span class="label red"> spicy</span> <span class="price">$45</span></h3>
-          <p>Two Eggs* cooked to order with Grits, Sawmill Gravy and Homemade Buttermilk Biscuits.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/dinner_2.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/dinner_2.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">WesternVeal</a> <span class="price">$33</span></h3>
-          <p>Low-Fat Vanilla Yogurt and Seasonal Fruit topped with our Honey Granola mix of Almonds and Dried Fruit.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/dinner_3.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/dinner_3.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Grilled Beef Fillet</a> <span class="label instock"> New</span> <span class="price">$90</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/dinner_4.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/dinner_4.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Tropical Chicken Grill</a> <span class="label"> best seller</span> <span class="price">$56</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/dinner_5.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/dinner_5.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Mix Grill</a> <span class="price">$80</span></h3>
-          <p>Three Buttermilk Biscuits with Sawmill Gravy and Smoked Sausage Patties or Thick-Sliced Bacon.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/dinner_6.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/dinner_6.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Shish Tawouk</a> <span class="price">$12</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/dinner_7.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/dinner_7.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Lamb Kofta</a> <span class="label instock"> New</span> <span class="price">$28</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/dinner_8.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/dinner_8.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Shrimp Island</a> <span class="label red"> spicy</span> <span class="price">$79</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- End Menu Content -->
-      </div>
+            <h3><a href="menu_single.html?item=${encodeURIComponent(item.name)}">${item.name}</a> <span class="price">${item.price}</span></h3>
+            <p>${item.description}</p>
+          `;
+      
+          menuContainera.appendChild(menuItemElement);
+        });
+      
+        function openNewPage(itemName) {
+            window.location.href = `menu_single.html?item=${encodeURIComponent(itemName)}`;
+        }
+      </script>
+      
       <!-- End Dinner -->
       <!-- Desert -->
-      <div class="food-banner dark" >
-        <div id="menu-parallax3">
-          <div class="bcg background13">
+      <div class="food-banner dark mt60" >
+        <div id="menu-parallax2">
+          <div class="bcg background12">
             <div class="bg-transparent">
               <div class="banner-content">
                 <div class="container" > <i class="icon-home-ico"></i>
-                  <h1>Desert</h1>
+                  <h1>desert</h1>
                 </div>
               </div>
               <!-- End Banner content -->
@@ -694,230 +479,95 @@
         </div>
         <!-- Service parallax -->
       </div>
-      <div class="container padding-t-60 padding-b-20">
-        <!-- Menu Items Masonary Content -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/desert_1.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/desert_1.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Black Cake </a> <span class="label red"> spicy</span> <span class="price">$45</span></h3>
-          <p>Two Eggs* cooked to order with Grits, Sawmill Gravy and Homemade Buttermilk Biscuits.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/desert_2.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/desert_2.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Tiramisu</a> <span class="label instock"> New</span><span class="price">$33</span></h3>
-          <p>Low-Fat Vanilla Yogurt and Seasonal Fruit topped with our Honey Granola mix of Almonds and Dried Fruit.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/desert_3.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/desert_3.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Lemon Cream Cake</a> <span class="price">$90</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/desert_4.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/desert_4.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">White Chocolate</a> <span class="label"> best seller</span> <span class="price">$56</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/desert_5.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/desert_5.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Dolicine</a> <span class="label instock"> New</span> <span class="price">$80</span></h3>
-          <p>Three Buttermilk Biscuits with Sawmill Gravy and Smoked Sausage Patties or Thick-Sliced Bacon.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/desert_6.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/desert_6.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Mango with Stream</a> <span class="price">$12</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/desert_7.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/desert_7.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Coconut Icecream</a> <span class="label"> best seller</span> <span class="price">$28</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- Menu Item -->
-        <article class="menu-item-list col-md-6 col-sm-12">
-          <div class="item-img">
-            <div class="overlay_content">
-              <!-- Overlay Item -->
-              <div class="overlay_item"> <img src="img/menu/desert_8.jpg" alt="">
-                <!-- Overlay -->
-                <div class="overlay">
-                  <!-- Icons -->
-                  <div class="icons">
-                    <!-- Buttons -->
-                    <div class="button"> <a href="img/menu/desert_8.jpg" rel="lightbox"><i class="fa fa-expand"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
-                    <!-- End Buttons -->
-                    <a class="close-overlay hidden">x</a> </div>
-                  <!-- End Icons -->
-                </div>
-                <!-- End Overlay -->
-              </div>
-              <!-- End Overlay Item -->
-            </div>
-          </div>
-          <h3><a href="menu_single.html">Fried Banana</a> <span class="label red"> spicy</span> <span class="price">$79</span></h3>
-          <p>Seasonal ripe berries on a crispy crust with amazing smell and long-lasting aftertaste.</p>
-        </article>
-        <!-- End Menu Item -->
-        <!-- End Menu Content -->
-      </div>
-      <!-- End Desert -->
-    </section>
-    <!-- End our menu -->
-    <!-- Video Background html5
-    ============================================= -->
-    <section class="bg_video dark text-center">
-      <div class="content padding-150">
-        <div class="col-md-6 col-md-offset-3">
+      <div class="container padding-t-60">
+        <div id="menu-items3"></div>
+      </div> 
+
+      <script>
+        // JSON-data
+        const menuItemsc = [
+        {
+      "name": "Baklava",
+      "image": "videos/eten-Fotos/baklava.jpg",
+      "description": "Een bladerdeeg met gehakte noten en siroop.",
+            "price": "€6,75"
+      
+    },
+    {
+      "name": "Revani",
+      "image": "videos/eten-Fotos/Revani.avif",
+      "description": "Een zoete taart gemaakt van griesmeel, gegarneerd met siroop.",
+            "price": "€6,75"
+    },
+    {
+      "name": "Künefe",
+      "image": "videos/eten-Fotos/Kunefe.avif",
+      "description": "Een Turkse dessert gemaakt van kaas en baklava-deeg.",
+            "price": "€6,75"
+    },
+    {
+      "name": "Sütlaç",
+      "image": "videos/eten-Fotos/sutlac.webp",
+      "description": "Een zoete rijstepap met kaneel en suiker.",
+            "price": "€6,75"
+    },
+    {
+      "name": "Lokum (Turkish Delight)",
+      "image": "videos/eten-Fotos/lokum.avif",
+      "description": "Gelatineblokjes gevuld met noten en bedekt met poedersuiker.",
+            "price": "€6,75"
+    },
+    {
+      "name": "Kazandibi",
+      "image": "videos/eten-Fotos/Kazandibi.jpg",
+      "description": "Een gebakken melkpudding.",
+            "price": "€6,75"
+    },
+
+  ];
+      
+        const menuContainerc = document.getElementById('menu-items3');
+      
+        menuItemsc.forEach(item => {
+          const menuItemElement = document.createElement('article');
+          menuItemElement.classList.add('menu-item-list', 'col-md-6', 'col-sm-12');
+          
+          menuItemElement.innerHTML = `
+            <div class="item-img">
+              <div class="overlay_content">
+                <div class="overlay_item"> 
+                  <img src="${item.image}" alt="">
+                  <div class="overlay">
+                    <div class="icons">
+                      <div class="button">
+                        <a href="${item.image}" rel="lightbox"><i class="fa fa-expand"></i></a>
+                        <a href="menu_single.html?item=${encodeURIComponent(item.name)}"><i class="fa fa-shopping-cart"></i></a>
+                      </div>
+                      <a class="close-overlay hidden">x</a>
+                    </div>
                   </div>
-      </div>
-      <!-- Video html5 source -->
-      <div class="video-wrap">
-        <video poster="img/videos/explore-poster.jpg" preload="auto" loop autoplay muted style="width: 1429.89236545682px; height: 804px; left: -4.44618272841058px;">
-          <source src="img/videos/explore.mp4" type="video/mp4">
-          <source src="img/videos/explore.webm" type="video/webm">
-        </video>
-      </div>
-      <!-- End Video html5 source -->
-    </section>
-    <!-- End background html5 video -->
+                </div>
+              </div>
+            </div>
+            <h3><a href="menu_single.html?item=${encodeURIComponent(item.name)}">${item.name}</a> <span class="price">${item.price}</span></h3>
+            <p>${item.description}</p>
+          `;
+      
+          menuContainerc.appendChild(menuItemElement);
+        });
+      
+        function openNewPage(itemName) {
+            window.location.href = `menu_single.html?item=${encodeURIComponent(itemName)}`;
+        }
+      </script>
+    <!--einde desert-->
+
+
+
+
+
+
+    <img style="width: 100%; max-width: 1900px; position: absolute; bottom: 210px; left: 0px;" src="videos/Shoot-1/test-lijn.png">
     <!-- Latest News
     ============================================= -->
     <section class="latest_news">
@@ -925,7 +575,7 @@
         <div class="row">
          <!-- Head Title -->
             <div class="head_title text-center">
-                <i class="icon-intro"></i>
+                <img src="videos/Shoot-1/logo-icon.png">
                 <h1>Het Laatste Nieuws</h1>
                 <span class="welcome"><h5 class="testUpToDate">Blijf up to date</h5></span>
             </div>
@@ -1065,13 +715,92 @@
           </ul>
         </div>
         <!-- End opening time -->
-        <!-- Flickr !-->
-        <div class="col-md-3 col-sm-6 col-xs-12 flickr">
-          <h3>Flickr Photos</h3>
-          <ul id="flickrbox" class="thumbs">
-          </ul>
+        <!--betere Flicker-->
+        <h3 style="position: relative; left: 50px;">Openingstijden</h3>
+        <div class="photo-grid">
+          <div class="photo">
+            <img src="videos/Shoot-1/mewsim-v100002.jpg" alt="Foto 1">
+          </div>
+          <div class="photo">
+            <img src="videos/Shoot-1/mewsim-v100051.jpg" alt="Foto 2">
+          </div>
+          <div class="photo">
+            <img src="videos/Shoot-1/mewsim-v100052.jpg" alt="Foto 3">
+          </div>
+          <div class="photo overlay-container">
+            <a href="https://www.instagram.com/mewsim.osdorp/" target="_blank" data-toggle="tooltip" title="Instagram">
+              <img src="videos/Shoot-1/mewsim-v100071.jpg" alt="Foto 4">
+              <div class="overlay">
+                <span>+10 foto's</span>
+              </div>
+            </a>
+          </div>
+          
         </div>
-        <!-- End flickr -->
+        <style>
+.photo-grid {
+  position: relative;
+   left: 50px;
+   background: white;
+   width: 205px;
+  display: grid;
+  grid-template-columns: repeat(2, 100px); /* Twee kolommen van elk 100px */
+  grid-gap: 5px; /* 5px ruimte tussen alle foto's */
+  justify-content: start; /* Zorg dat het grid begint vanaf links */
+  align-items: start; /* Zorg dat items bovenaan beginnen */
+}
+
+.photo {
+  position: relative;
+  width: 100px; /* Breedte van de foto aangepast */
+  height: 100px; /* Hoogte van de foto aangepast */
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.overlay-container a {
+  text-decoration: none;
+}
+
+        </style>
+
+        
+        <!--einde flicker-->
       </div>
     </div>
     <!-- End container -->
@@ -1098,5 +827,8 @@
 <script src="javascripts/libs/modernizr.js"></script>
 <!-- JS Custom Codes -->
 <script src="javascripts/custom/main.js" ></script>
+
 </body>
 </html>
+
+

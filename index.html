@@ -463,103 +463,106 @@
       
       <!-- End Dinner -->
       <!-- Desert -->
-      <div class="food-banner dark mt60" >
-        <div id="menu-parallax2">
-          <div class="bcg background12">
-            <div class="bg-transparent">
-              <div class="banner-content">
-                <div class="container" > <i class="icon-home-ico"></i>
-                  <h1>desert</h1>
+      <section data-scroll-index="3" class="padding-t-60 mb40">
+        <div class="food-banner dark" >
+          <div id="menu-parallax4">
+            <div class="bcg background13">
+              <div class="bg-transparent">
+                <div class="banner-content">
+                  <div class="container" > <i class="icon-desert"></i>
+                    <h1>Toetje</h1>
+                  </div>
                 </div>
+                <!-- End Banner content -->
               </div>
-              <!-- End Banner content -->
+              <!-- End bg trnsparent -->
             </div>
-            <!-- End bg trnsparent -->
           </div>
+          <!-- Service parallax -->
         </div>
-        <!-- Service parallax -->
-      </div>
-      <div class="container padding-t-60">
-        <div id="menu-items3"></div>
-      </div> 
 
-      <script>
-        // JSON-data
-        const menuItemsc = [
-        {
-      "name": "Baklava",
-      "image": "videos/eten-Fotos/baklava.jpg",
-      "description": "Een bladerdeeg met gehakte noten en siroop.",
-            "price": "€6,75"
-      
-    },
-    {
-      "name": "Revani",
-      "image": "videos/eten-Fotos/Revani.avif",
-      "description": "Een zoete taart gemaakt van griesmeel, gegarneerd met siroop.",
-            "price": "€6,75"
-    },
-    {
-      "name": "Künefe",
-      "image": "videos/eten-Fotos/Kunefe.avif",
-      "description": "Een Turkse dessert gemaakt van kaas en baklava-deeg.",
-            "price": "€6,75"
-    },
-    {
-      "name": "Sütlaç",
-      "image": "videos/eten-Fotos/sutlac.webp",
-      "description": "Een zoete rijstepap met kaneel en suiker.",
-            "price": "€6,75"
-    },
-    {
-      "name": "Lokum (Turkish Delight)",
-      "image": "videos/eten-Fotos/lokum.avif",
-      "description": "Gelatineblokjes gevuld met noten en bedekt met poedersuiker.",
-            "price": "€6,75"
-    },
-    {
-      "name": "Kazandibi",
-      "image": "videos/eten-Fotos/Kazandibi.jpg",
-      "description": "Een gebakken melkpudding.",
-            "price": "€6,75"
-    },
+        <div class="container padding-t-60">
+          <div id="menu-items3"></div>
+        </div> 
 
-  ];
-      
-        const menuContainerc = document.getElementById('menu-items3');
-      
-        menuItemsc.forEach(item => {
-          const menuItemElement = document.createElement('article');
-          menuItemElement.classList.add('menu-item-list', 'col-md-6', 'col-sm-12');
-          
-          menuItemElement.innerHTML = `
-            <div class="item-img">
-              <div class="overlay_content">
-                <div class="overlay_item"> 
-                  <img src="${item.image}" alt="">
-                  <div class="overlay">
-                    <div class="icons">
-                      <div class="button">
-                        <a href="${item.image}" rel="lightbox"><i class="fa fa-expand"></i></a>
-                        <a href="menu_single.html?item=${encodeURIComponent(item.name)}"><i class="fa fa-shopping-cart"></i></a>
+        <script>
+          // JSON-data
+          const menuItemsc = [
+          {
+        "name": "Baklava",
+        "image": "videos/eten-Fotos/baklava.jpg",
+        "description": "Een bladerdeeg met gehakte noten en siroop.",
+              "price": "€6,75"
+        
+      },
+      {
+        "name": "Revani",
+        "image": "videos/eten-Fotos/Revani.avif",
+        "description": "Een zoete taart gemaakt van griesmeel, gegarneerd met siroop.",
+              "price": "€6,75"
+      },
+      {
+        "name": "Künefe",
+        "image": "videos/eten-Fotos/Kunefe.avif",
+        "description": "Een Turkse dessert gemaakt van kaas en baklava-deeg.",
+              "price": "€6,75"
+      },
+      {
+        "name": "Sütlaç",
+        "image": "videos/eten-Fotos/sutlac.webp",
+        "description": "Een zoete rijstepap met kaneel en suiker.",
+              "price": "€6,75"
+      },
+      {
+        "name": "Lokum (Turkish Delight)",
+        "image": "videos/eten-Fotos/lokum.avif",
+        "description": "Gelatineblokjes gevuld met noten en bedekt met poedersuiker.",
+              "price": "€6,75"
+      },
+      {
+        "name": "Kazandibi",
+        "image": "videos/eten-Fotos/Kazandibi.jpg",
+        "description": "Een gebakken melkpudding.",
+              "price": "€6,75"
+      },
+  
+    ];
+        
+          const menuContainerc = document.getElementById('menu-items3');
+        
+          menuItemsc.forEach(item => {
+            const menuItemElement = document.createElement('article');
+            menuItemElement.classList.add('menu-item-list', 'col-md-6', 'col-sm-12');
+            
+            menuItemElement.innerHTML = `
+              <div class="item-img">
+                <div class="overlay_content">
+                  <div class="overlay_item"> 
+                    <img src="${item.image}" alt="">
+                    <div class="overlay">
+                      <div class="icons">
+                        <div class="button">
+                          <a href="${item.image}" rel="lightbox"><i class="fa fa-expand"></i></a>
+                          <a href="menu_single.html?item=${encodeURIComponent(item.name)}"><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                        <a class="close-overlay hidden">x</a>
                       </div>
-                      <a class="close-overlay hidden">x</a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h3><a href="menu_single.html?item=${encodeURIComponent(item.name)}">${item.name}</a> <span class="price">${item.price}</span></h3>
-            <p>${item.description}</p>
-          `;
-      
-          menuContainerc.appendChild(menuItemElement);
-        });
-      
-        function openNewPage(itemName) {
-            window.location.href = `menu_single.html?item=${encodeURIComponent(itemName)}`;
-        }
-      </script>
+              <h3><a href="menu_single.html?item=${encodeURIComponent(item.name)}">${item.name}</a> <span class="price">${item.price}</span></h3>
+              <p>${item.description}</p>
+            `;
+        
+            menuContainerc.appendChild(menuItemElement);
+          });
+        
+          function openNewPage(itemName) {
+              window.location.href = `menu_single.html?item=${encodeURIComponent(itemName)}`;
+          }
+        </script>
+      </section>
     <!--einde desert-->
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="overflow-y: scroll; scrollbar-width: none;" lang="en">
 <head>
 <!-- Meta Tags
     ============================================= -->
@@ -53,17 +53,6 @@
     <![endif]-->
 </head>
 <body >
-<!-- Loader
-    ============================================= -->
-<div id="loader">
-  <div class="loader-item"> <img src="https://usercontent.one/wp/www.mewsim.nl/wp-content/uploads/logodrk-300x69.png?media=1725876042" alt="">
-    <div class="spinner">
-      <div class="bounce1"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
-    </div>
-  </div>
-</div>
 <!-- Document Wrapper
     ============================================= -->
 <div id="wrapper">
@@ -143,7 +132,7 @@
         <div class="row">
           <!-- Head Title -->
             <div class="head_title">
-                <i class="icon-intro"></i>
+              <img src="videos/Shoot-1/logo-icon.png">
                 <h1>Stuur een bericht</h1>
                 <h5 class="testUpToDate">Blijf in Aanraking</h5>
             </div>
@@ -396,67 +385,7 @@
           </div>
         </div>
           
-          <style>
-            .photo-grid {
-              position: relative;
-              left: 0px;
-              background: white;
-              width: 205px;
-              display: grid;
-              grid-template-columns: repeat(3, 100px); /* Twee kolommen van elk 100px */
-              grid-gap: 5px; /* 5px ruimte tussen alle foto's */
-              justify-content: start; /* Zorg dat het grid begint vanaf links */
-              align-items: start; /* Zorg dat items bovenaan beginnen */
-            }
-  
-            .photo {
-              position: relative;
-              width: 100px; /* Breedte van de foto aangepast */
-              height: 100px; /* Hoogte van de foto aangepast */
-              overflow: hidden;
-            }
-  
-            .photo img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              display: block;
-            }
-  
-            .overlay-container {
-              position: relative;
-            }
-  
-            .overlay {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background: rgba(0, 0, 0, 0.5);
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              opacity: 0;
-              transition: opacity 0.3s ease;
-            }
-  
-            .overlay-container:hover .overlay {
-              opacity: 1;
-            }
-  
-            .overlay span {
-              color: #fff;
-              font-size: 14px;
-              font-weight: bold;
-              text-transform: uppercase;
-            }
-  
-            .overlay-container a {
-              text-decoration: none;
-            }
-  
-          </style>
+          
         </div>
       </div>
       <!-- End container -->
@@ -464,11 +393,6 @@
       <div class="footer_logo text-center"> <img  src="https://usercontent.one/wp/www.mewsim.nl/wp-content/uploads/logodrk-300x69.png?media=1725876042"  alt="logo">
         <p>&copy; <span id="currentYear"></span> Mewsim. Alle rechten voorbehouden.</p>
       </div>
-  
-      <script>
-        // Haal het huidige jaar op en voeg het toe aan de pagina
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-      </script>
       <!-- End Footer logo !-->
     </footer>
   <!-- End footer -->
@@ -485,5 +409,7 @@
 <script src="javascripts/libs/modernizr.js"></script>
 <!-- JS Custom Codes -->
 <script src="javascripts/custom/main.js" ></script>
+<!--mijn js bestand-->
+<script src="javascripts/custom/mijnaangepastejs.js"></script>
 </body>
 </html>

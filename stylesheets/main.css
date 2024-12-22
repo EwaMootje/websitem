@@ -752,6 +752,69 @@ body::-webkit-scrollbar {
 .background44 {
 	background-image: url(../img/banner/team.jpg)
 }
+
+
+.photo-grid {
+	position: relative;
+	left: 0px;
+	width: 205px;
+	display: grid;
+	grid-template-columns: repeat(3, 100px); /* Drie kolommen van elk 100px */
+	grid-gap: 5px; /* 5px ruimte tussen alle foto's */
+	justify-content: start; /* Zorg dat het grid begint vanaf links */
+	align-items: start; /* Zorg dat items bovenaan beginnen */
+  }
+  
+  .photo {
+	position: relative;
+	width: 100px; /* Breedte van de foto aangepast */
+	height: 100px; /* Hoogte van de foto aangepast */
+	overflow: hidden;
+  }
+  
+  .photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+  }
+  
+  .overlay-container {
+	position: relative;
+  }
+  
+  .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  }
+  
+  .overlay-container:hover .overlay {
+	opacity: 1;
+  }
+  
+  .overlay span {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+  }
+  
+  .overlay-container a {
+	text-decoration: none;
+  }
+  
+
+
+
 #header-sticky-wrapper {
 	height: auto!important
 }
@@ -2042,6 +2105,11 @@ body.stretched #header.full-header #main-menu ul li.mega-menu .mega-menu-content
 	right: 25px;
 	font-size: 20px
 }
+
+
+
+
+
 .reserv_style2 .form-group {
 	margin-bottom: 0
 }

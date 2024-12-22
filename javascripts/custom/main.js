@@ -25,9 +25,6 @@ $(window).scroll(function(){
   });
 
 
-
-
-
 $(function ($) {
 
      

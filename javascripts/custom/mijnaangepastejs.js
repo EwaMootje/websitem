@@ -7,49 +7,49 @@ document.getElementById('currentYear').textContent = new Date().getFullYear();
 const menuItems = [
   {
     "name": "Menemen",
-    "image": "img/eten-Fotos/menemen.jpg",
+    "image": "img/eten_fotos/menemen.jpg",
     "description": "Een pittige Turkse roerei gemaakt met tomaten, paprika en specerijen.",
     "price": "€ 7,50"
   },
   {
     "name": "Sucuklu Yumurta",
-    "image": "img/eten-Fotos/Sucuklu Yumurta.jpg",
+    "image": "img/eten_fotos/sucuklu_yumurta.jpg",
     "description": "Gebakken eieren met Turkse sucuk (vleesworst) en tomaten.",
     "price": "€ 6,75"
   },
   {
     "name": "Sigara Böreği",
-    "image": "img/eten-Fotos/Sigara Böreği.jpg",
+    "image": "img/eten_fotos/sigara_boregi.jpg",
     "description": "Fritters gevuld met kaas en kruiden, vaak geserveerd als ontbijt.",
     "price": "€ 9,50"
   },
   {
     "name": "Kahvaltı Tabağı",
-    "image": "img/eten-Fotos/Kahvaltı Tabağı.jpg",
+    "image": "img/eten_fotos/kahvalti_tabagi.jpg",
     "description": "Een traditioneel Turks ontbijt met verschillende kazen, olijven, brood, tomaten, komkommer en worst.",
     "price": "€ 11,50"
   },
   {
     "name": "Kuymak",
-    "image": "img/eten-Fotos/Kuymak.jpg",
+    "image": "img/eten_fotos/kuymak.jpg",
     "description": "Een dunne, knapperige pizza met gehakt, tomaat, ui en kruiden.",
     "price": "€ 12,50"
   },
   {
     "name": "Peynirli Pide",
-    "image": "img/eten-Fotos/pide-with-cheese.jpg",
+    "image": "img/eten_fotos/pide_with_cheese.jpg",
     "description": "Een brood gevuld met Turkse kaas en kruiden, vaak gegeten bij het ontbijt.",
     "price": "€ 11,50"
   },
   {
     "name": "Bal-Kaymak",
-    "image": "img/eten-Fotos/Bal-Kaymak.jpg",
+    "image": "img/eten_fotos/bal_Kaymak.jpg",
     "description": "Vers brood met honing en room.",
     "price": "€ 4,50"
   },
   {
     "name": "Kumpir",
-    "image": "img/eten-Fotos/Kumpir.jpg",
+    "image": "img/eten_fotos/kumpir.jpg",
     "description": "Een grote aardappel gevuld met boter, kaas, groenten en ham.",
     "price": "€ 7,50"
   }
@@ -69,8 +69,6 @@ menuItems.forEach(item => {
           <div class="overlay">
             <div class="icons">
               <div class="button">
-                <a href="${item.image}" rel="lightbox"><i class="fa fa-expand"></i></a>
-                <a href="menu_single.html?item=${encodeURIComponent(item.name)}"><i class="fa fa-shopping-cart"></i></a>
               </div>
               <a class="close-overlay hidden">x</a>
             </div>
@@ -97,49 +95,49 @@ function openNewPage(itemName) {
 const menuItemsa = [
   {
 "name": "Adana Kebab",
-"image": "img/eten-Fotos/Adana Kebab.jpg",
+"image": "img/eten_fotos/adana_kebab.jpg",
 "price": "€ 15,00",
 "description": "Gegrild lamsvlees kebab met specerijen en pitabrood."
 },
 {
 "name": "Iskender Kebab",
-"image": "img/eten-Fotos/iskender-kebab.jpg",
+"image": "img/eten_fotos/iskender_kebab.jpg",
 "price": "€ 18,00",
 "description": "Gebroken kebab geserveerd op pita met tomatensaus en yoghurt."
 },
 {
 "name": "Tavuk Shish",
-"image": "img/eten-Fotos/tavuk-shish.jpg",
+"image": "img/eten_fotos/tavuk_shish.jpg",
 "price": "€ 20,00",
 "description": "Gegrilde kipspies met groenten."
 },
 {
 "name": "Kuzu Tandir",
-"image": "img/eten-Fotos/Kuzu Tandir.jpg",
+"image": "img/eten_fotos/kuzu_tandir.jpg",
 "price": "€ 22,00",
 "description": "Langzaam gegaard lamsschenkel met kruiden en groenten."
 },
 {
 "name": "Lahmacun",
-"image": "img/eten-Fotos/lahmacun.jpg",
+"image": "img/eten_fotos/lahmacun.jpg",
 "price": "€ 14,00",
 "description": "Een Turkse pizza met gehakt en groenten."
 },
 {
 "name": "Köfte",
-"image": "img/eten-Fotos/Köfte.jpg",
+"image": "img/eten_fotos/kofte.jpg",
 "price": "€ 17,00",
 "description": "Gehaktballetjes gekruid met kruiden en geserveerd met salade."
 },
 {
 "name": "Pide",
-"image": "img/eten-Fotos/Pide.jpg",
+"image": "img/eten_fotos/Pide.jpg",
 "price": "€ 19,00",
 "description": "Een Turks brood met diverse toppings zoals kaas, ei en kruiden."
 },
 {
 "name": "Dolma",
-"image": "img/eten-Fotos/Dolma.jpg",
+"image": "img/eten_fotos/dolma.jpg",
 "price": "€ 21,00",
 "description": "Gevulde druivenbladeren met rijst, kruiden en kruiden."
 }
@@ -186,38 +184,38 @@ const menuItemsa = [
 const menuItemsc = [
   {
     "name": "Baklava",
-    "image": "img/eten-Fotos/baklava.jpg",
+    "image": "img/eten_fotos/baklava.jpg",
     "description": "Een bladerdeeg met gehakte noten en siroop.",
           "price": "€ 6,75"
   
   },
   {
     "name": "Revani",
-    "image": "img/eten-Fotos/Revani.jpg",
+    "image": "img/eten_fotos/revani.jpg",
     "description": "Een zoete taart gemaakt van griesmeel, gegarneerd met siroop.",
           "price": "€ 6,75"
   },
   {
     "name": "Künefe",
-    "image": "img/eten-Fotos/Kunefe.jpg",
+    "image": "img/eten_fotos/kunefe.jpg",
     "description": "Een Turkse dessert gemaakt van kaas en baklava-deeg.",
           "price": "€ 6,75"
   },
   {
     "name": "Sütlaç",
-    "image": "img/eten-Fotos/sutlac.jpg",
+    "image": "img/eten_fotos/sutlac.jpg",
     "description": "Een zoete rijstepap met kaneel en suiker.",
           "price": "€ 6,75"
   },
   {
-    "name": "Lokum (Turkish Delight)",
-    "image": "img/eten-Fotos/lokum.jpg",
-    "description": "Gelatineblokjes gevuld met noten en bedekt met poedersuiker.",
+    "name": "cheesecake",
+    "image": "img/eten_fotos/cheesecake.jpg",
+    "description": "Cheesecake gemaakt met kaneel",
           "price": "€ 6,75"
   },
   {
     "name": "Kazandibi",
-    "image": "img/eten-Fotos/Kazandibi.jpg",
+    "image": "img/eten_fotos/kazandibi.jpg",
     "description": "Een gebakken melkpudding.",
           "price": "€ 6,75"
   },

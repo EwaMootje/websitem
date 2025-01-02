@@ -754,6 +754,55 @@ body::-webkit-scrollbar {
 }
 
 
+.redirect-menu-pagina {
+    background-color: #f5a623; /* Oranje kleur */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.redirect-menu-pagina:hover {
+    background-color: #e07b16; /* Donkeroranje bij hover */
+    transform: scale(1.05); /* Licht vergroten bij hover */
+}
+
+.redirect-menu-pagina:focus {
+    outline: none; /* Verwijdert de standaard focus-rand */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Focus effect */
+}
+
+
+
+
+.menu-item-link {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border: 2px solid transparent;
+	border-radius: 8px;
+	min-height: 108px;
+  }
+  
+  .menu-item-link:hover {
+	transform: scale(1.05); /* Maakt de kaart een beetje groter */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Voegt een schaduw toe */
+	border: 2px solid #007BFF; /* Geeft een mooie blauwe rand */
+  }
+  
+  .menu-item-link .item-img img {
+	border-radius: 8px; /* Zorgt ervoor dat de afbeelding de afgeronde hoeken volgt */
+  }
+  
+  .menu-item-link:hover .item-img img {
+	filter: brightness(0.95); /* Maakt de afbeelding een klein beetje donkerder bij hover */
+  }
+  
   
 
 .active{
@@ -797,6 +846,7 @@ body::-webkit-scrollbar {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.5);
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	opacity: 0;
@@ -805,6 +855,12 @@ body::-webkit-scrollbar {
   
   .overlay-container:hover .overlay {
 	opacity: 1;
+  }
+  
+  .overlay i.fa-instagram {
+	color: #fff;
+	font-size: 24px; /* Grootte van het Instagram-icoon */
+	margin-bottom: 5px; /* Ruimte tussen het icoon en de tekst */
   }
   
   .overlay span {
@@ -817,6 +873,7 @@ body::-webkit-scrollbar {
   .overlay-container a {
 	text-decoration: none;
   }
+  
   
 
 
@@ -2569,8 +2626,9 @@ span.welcome:after {
 	margin-right: 20px
 }
 .menu-item-list .item-img img {
-	width: 100px;
-	height: 100px;
+	
+	width: 108px;
+	height: 108px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px

@@ -10,7 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <!-- Your Title Page
     ============================================= -->
-<title>Mewsim | Single Menu</title>
+<title class="food-name">Mewsim</title>
 <!-- Favicon Icons
      ============================================= -->
      <link rel="shortcut icon" href="img/eten_fotos/foto_1/title-logo.png">
@@ -71,11 +71,11 @@
             <div class="container" >
               <div class="slider-content  "> <i class="icon-home-ico"></i>
                 <h1>Menu</h1>
-                <p>Come & Taste</p>
+                <p>Kom & Probeer</p>
                 <ol class="breadcrumb">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="menu_grid.html">Menu</a></li>
-                  <li>Single Menu</li>
+                  <li class="food-name" ></li>
                 </ol>
               </div>
             </div>
@@ -115,9 +115,6 @@
                         <li><a href="contact.html">
                           <div>Contact</div>
                           </a> </li>
-                          
-                        
-                       
                       </ul>
                     </nav>
         <!-- #main-menu end -->
@@ -140,9 +137,9 @@
             <!--End Menu thumb slider -->
             <!-- Menu Desc -->
             <div class="menu-desc col-md-6">
-              <h2 id="food-name"></h2> 
+              <h2 class="food-name"></h2> 
               <span class="pull-right"><span id="food-price"></span></span>
-              <!-- Rating -->
+              <!-- Rating 
               <fieldset class="rating">
                 <span class="active"><i class="fa fa-star"></i></span> 
                 <span class="active"><i class="fa fa-star"></i></span> 
@@ -150,14 +147,14 @@
                 <span class="active"><i class="fa fa-star"></i></span> 
                 <span><i class="fa fa-star"></i></span>
               </fieldset>
-              <!-- End Rating -->
-              <!-- Tagged -->
+              End Rating -->
+              <!-- Tagged
               <div class="tagged"> 
                 <span class="label red">Spicy</span> 
                 <span class="label label-default">Dinner</span> 
                 <span class="label instock">In Stock</span> 
               </div>
-              <!-- Ends Tagged -->
+               Ends Tagged -->
               <!-- Description content -->
               <div class="desc-content">
                 <p id="food-description"></p>
@@ -174,148 +171,220 @@
     
         // Menu items data
         const menuItems = [
-            {
-                "name": "Menemen",
-                "image": "img/eten_fotos/menemen.jpg",
-                "price": "€7,50",
-                "description": "Een pittige Turkse roerei gemaakt met tomaten, paprika en specerijen."
-            },
-            {
-                "name": "Sucuklu Yumurta",
-                "image": "img/eten_fotos/Sucuklu Yumurta.jpg",
-                "price": "€6,75",
-                "description": "Gebakken eieren met Turkse sucuk (vleesworst) en tomaten."
-            },
-            {
-                "name": "Sigara Böreği",
-                "image": "img/eten_fotos/Sigara Böreği.jpg",
-                "price": "€9,50",
-                "description": "Fritters gevuld met kaas en kruiden, vaak geserveerd als ontbijt."
-            },
-            {
-                "name": "Kahvaltı Tabağı",
-                "image": "img/eten_fotos/Kahvaltı Tabağı.jpg",
-                "price": "€11,50",
-                "description": "Een traditioneel Turks ontbijt met verschillende kazen, olijven, brood, tomaten, komkommer en worst."
-            },
-            {
-                "name": "Kuymak",
-                "image": "img/eten_fotos/Kuymak.jpg",
-                "description": "Een dunne, knapperige pizza met gehakt, tomaat, ui en kruiden."
-            },
-            {
-                "name": "Peynirli Pide",
-                "image": "img/eten_fotos/pide-with-cheese.jpg",
-                "price": "€11,50",
-                "description": "Een brood gevuld met Turkse kaas en kruiden, vaak gegeten bij het ontbijt."
-            },
-            {
-                "name": "Bal-Kaymak",
-                "image": "img/eten_fotos/Bal-Kaymak.jpg",
-                "price": "€4,50",
-                "description": "Vers brood met honing en room."
-            },
-            {
-                "name": "Kumpir",
-                "image": "img/eten_fotos/Kumpir.jpg",
-                "price": "€7,50",
-                "description": "Een grote aardappel gevuld met boter, kaas, groenten en ham."
-            },
-            {
-                "name": "Menemen (zonder eieren)",
-                "image": "img/eten_fotos/menemen.jpg",
-                "price": "€5,50",
-                "description": "Tomaten en paprika's gekookt zonder eieren, een hartige optie voor ontbijt."
-            },
-            {
-                "name": "Ayran",
-                "image": "img/eten_fotos/menemen.jpg",
-                "price": "€4,90",
-                "description": "Een Turkse drinkyoghurt."
-            },
-            {      "name": "Baklava",
-            "image": "img/eten_fotos/baklava.jpg",
-      "description": "Een bladerdeeg met gehakte noten en siroop.",
-            "price": "€6,75"
-      
-    },
-    {
-      "name": "Revani",
-      "image": "img/eten_fotos/Revani.jpg",
-      "description": "Een zoete taart gemaakt van griesmeel, gegarneerd met siroop.",
-            "price": "€6,75"
-    },
-    {
-      "name": "Künefe",
-      "image": "img/eten_fotos/Kunefe.jpg",
-      "description": "Een Turkse dessert gemaakt van kaas en baklava-deeg.",
-            "price": "€6,75"
-    },
-    {
-      "name": "Sütlaç",
-      "image": "img/eten_fotos/sutlac.jpg",
-      "description": "Een zoete rijstepap met kaneel en suiker.",
-            "price": "€6,75"
-    },
-    {
-      "name": "cheesecake",
-      "image": "img/eten_fotos/cheesecake.jpg",
-      "description": "Gelatineblokjes gevuld met noten en bedekt met poedersuiker.",
-            "price": "€6,75"
-    },
-    {
-      "name": "Kazandibi",
-      "image": "img/eten_fotos/Kazandibi.jpg",
-      "description": "Een gebakken melkpudding.",
-            "price": "€6,75"
-    },
-    {
-      "name": "Adana Kebab",
-      "image": "img/eten_fotos/Adana Kebab.jpg",
-      "price": "€15,00",
-      "description": "Gegrild lamsvlees kebab met specerijen en pitabrood."
+        {
+        "name": "Sütlac",
+        "image": "img/eten_fotos/sutlac.jpg",
+        "description": "Een zoete rijstepap met kaneel en suiker.",
+        "price": "€ 6,00"
+      },
+      {
+        "name": "Kazandibi",
+        "image": "img/eten_fotos/kazandibi.jpg",
+        "description": "Een gebakken melkpudding.",
+        "price": "€ 6,50"
+      },
+      {
+        "name": "Künefe",
+        "image": "img/eten_fotos/kunefe.jpg",
+        "description": "Een Turks dessert gemaakt van kaas en baklava-deeg.",
+        "price": "€ 8,90"
+      },
+      {
+        "name": "San Sebastian Cheesecake",
+        "image": "img/eten_fotos/san_sebastian_cheesecake.jpg",
+        "description": "Cheesecake gemaakt met een zachte, romige binnenkant.",
+        "price": "€ 8,50"
+      },
+      {
+        "name": "Cheesecake",
+        "image": "img/eten_fotos/cheesecake.jpg",
+        "description": "Klassieke cheesecake met een knapperige bodem.",
+        "price": "€ 8,50"
+      },
+      {
+        "name": "Red Velvet Cake",
+        "image": "img/eten_fotos/red_velvet_cake.jpg",
+        "description": "Een luchtige taart met een vleugje cacao.",
+        "price": "€ 8,50"
+      },
+      {
+        "name": "Cikolatali Sufle",
+        "image": "img/eten_fotos/cikolatali_sufle.jpg",
+        "description": "Chocolade lava cake met een warme kern.",
+        "price": "€ 8,90"
+      },
+      {
+        "name": "Baklava Burger",
+        "image": "img/eten_fotos/baklava_burger.jpeg",
+        "description": "Unieke combinatie van baklava in burgerstijl.",
+        "price": "€ 10,90"
+      },
+      {
+        "name": "Baklava Burger met IJs",
+        "image": "img/eten_fotos/baklava_burger_met_ijs.jpg",
+        "description": "Baklava burger geserveerd met vanille-ijs.",
+        "price": "€ 12,90"
+      },
+      {
+        "name": "Fruitschaal",
+        "image": "img/eten_fotos/fruitschaal.jpg",
+        "description": "Een frisse selectie van seizoensfruit.",
+        "price": "€ 7,50"
+      },
+      {
+        "name": "Diverse Soorten IJs (3 bollen)",
+        "image": "img/eten_fotos/diverse_soorten_ijs.jpg",
+        "description": "Keuze uit drie smaken ijs.",
+        "price": "€ 8,25"
+      },
+      {
+        "name": "Bolletje Vanille IJs",
+        "image": "img/eten_fotos/bolletje_vanille_ijs.jpg",
+        "description": "Een klassiek bolletje vanille-ijs.",
+        "price": "€ 3,00"
+      },
+      {
+        "name": "Adana Kebab",
+    "image": "img/eten_fotos/adana_kebab.jpg",
+        "price": "€ 22,90",
+    "description": "Pittige gehaktspies van de grill."
+      },
+  {
+    "name": "Sebzeli Kebab",
+    "image": "img/eten_fotos/sebzeli_kebab.jpg",
+        "price": "€ 23,90",
+    "description": "Een kebab met gegrilde groenten, een heerlijke combinatie van smaken."
   },
   {
-      "name": "Iskender Kebab",
-      "image": "img/eten_fotos/iskender-kebab.jpg",
-      "price": "€18,00",
-      "description": "Gebroken kebab geserveerd op pita met tomatensaus en yoghurt."
+    "name": "Beyti Kebab",
+    "image": "img/eten_fotos/beyti_kebab.jpg",
+        "price": "€ 26,90",
+    "description": "Gegrild vlees in een zachte wrap, geserveerd met een heerlijke yoghurtsaus."
   },
   {
-      "name": "Tavuk Shish",
-      "image": "img/eten_fotos/tavuk-shish.jpg",
-      "price": "€20,00",
-      "description": "Gegrilde kipspies met groenten."
+    "name": "mewsim Köfte",
+    "image": "img/eten_fotos/sutlac.jpg",
+        "price": "€ 18,90",
+    "description": "Gehaktballetjes op de grill met patat."
   },
   {
-      "name": "Kuzu Tandir",
-      "image": "img/eten_fotos/Kuzu Tandir.jpg",
-      "price": "€22,00",
-      "description": "Langzaam gegaard lamsschenkel met kruiden en groenten."
+    "name": "Tavuk Sis",
+    "image": "img/eten_fotos/tavuk_sis.jpg",
+        "price": "€ 20,90",
+    "description": "Mals kipfilet aan een spies, gegrild tot perfectie."
   },
   {
-      "name": "Lahmacun",
-      "image": "img/eten_fotos/lahmacun.jpg",
-      "price": "€14,00",
-      "description": "Een Turkse pizza met gehakt en groenten."
+    "name": "Tavuk Göğsü",
+    "image": "img/eten_fotos/tavuk_gogsu.jpg",
+        "price": "€ 20,90",
+    "description": "Gegrilde kipfilet, een lichte en smakelijke keuze."
   },
   {
-      "name": "Köfte",
-      "image": "img/eten_fotos/Köfte.jpg",
-      "price": "€17,00",
-      "description": "Gehaktballetjes gekruid met kruiden en geserveerd met salade."
+    "name": "Sis Kebab",
+    "image": "img/eten_fotos/sis_kebab.jpg",
+        "price": "€ 27,90",
+    "description": "Traditionele kebab van gegrild vlees op een spies, een smaakvolle traktatie."
   },
   {
-      "name": "Pide",
-      "image": "img/eten_fotos/Pide.jpg",
-      "price": "€19,00",
-      "description": "Een Turks brood met diverse toppings zoals kaas, ei en kruiden."
+    "name": "Shoarma",
+    "image": "img/eten_fotos/shoarma.jpg",
+        "price": "€ 21,90",
+    "description": "Mals vlees gekruid met aromatische specerijen, geserveerd met een frisse salade."
   },
   {
-      "name": "Dolma",
-      "image": "img/eten_fotos/Dolma.jpg",
-      "price": "€21,00",
-      "description": "Gevulde druivenbladeren met rijst, kruiden en kruiden."
+    "name": "Kuzu Pirzola",
+    "image": "img/eten_fotos/kuzu_pirzola.jpg",
+        "price": "€ 28,90",
+    "description": "Gegrilde lamskoteletjes, vol van smaak en perfect voor een stevige maaltijd."
+  },
+  {
+    "name": "Ali Nazik",
+    "image": "img/eten_fotos/ali_nazik.jpg",
+        "price": "€ 27,90",
+    "description": "Gegrild vlees geserveerd op een bedje van romige yoghurt en aubergine."
+  },
+  {
+    "name": "Mix Grill",
+    "image": "img/eten_fotos/mix_grill.jpg",
+        "price": "€ 28,90",
+    "description": "Een variatie van gegrild vlees, perfect voor wie van verschillende smaken houdt."
+  },
+  {
+    "name": "Mix Grill (2 personen)",
+    "image": "img/eten_fotos/mix_grill.jpg",
+        "price": "€ 52,50",
+    "description": "Een royale portie mix grill, ideaal voor twee personen."
+  },
+  {
+    "name": "Mix Grill (3 personen)",
+    "image": "img/eten_fotos/mix_grill.jpg",
+        "price": "€ 75,00",
+    "description": "Een grote mix grill voor drie personen, voor een feestelijke maaltijd."
+  },          {
+    "name": "Mercimek Corbasi",
+    "image": "img/eten_fotos/mercimek_corbasi.jpg",
+        "price": "€ 6,75",
+    "description": "Linzensoep, een traditioneel Turks gerecht."
+  },
+  {
+    "name": "Mewsim Corbasi",
+    "image": "img/eten_fotos/sutlac.jpg",
+        "price": "€ 6,75",
+    "description": "Speciale mewsim soep."
+  },
+  {
+    "name": "Mewsim Salata",
+    "image": "img/eten_fotos/sutlac.jpg",
+        "price": "€ 9,50",
+    "description": "Seizoenssalade met sla, komkommer, mais, wortel en dressing."
+  },
+  {
+    "name": "Yoghurt Bowl",
+    "image": "img/eten_fotos/yoghurt_bowl.jpeg",
+        "price": "€ 12,50",
+    "description": "Een frisse en romige kom met yoghurt, perfect voor een gezond ontbijt of snack."
+  },
+  {
+    "name": "Mozzarella Caprese",
+    "image": "img/eten_fotos/mozzarella_caprese.jpg",
+        "price": "€ 12,50",
+    "description": "Een klassieke Italiaanse salade met romige mozzarella, tomaat en verse basilicum."
+  },
+  {
+    "name": "Somon Füme",
+    "image": "img/eten_fotos/somon_fume.jpg",
+        "price": "€ 14,90",
+    "description": "Rookzalige gerookte zalm, ideaal voor een lichte en smaakvolle maaltijd."
+  },
+  {
+    "name": "Akdeniz Salatasi",
+    "image": "img/eten_fotos/akdeniz_salatasi.jpg",
+        "price": "€ 11,50",
+    "description": "Een frisse salade geïnspireerd door de smaken van de Middellandse Zee, met olijven, feta en groenten."
+  },
+  {
+    "name": "Tavuk Crouton",
+    "image": "img/eten_fotos/tavuk_crouton.jpg",
+        "price": "€ 15,90",
+    "description": "Knapperige stukjes kip met croutons, ideaal als een hartige en vullende salade."
+  },
+  {
+    "name": "Cevizli Kasik Salatasi",
+    "image": "img/eten_fotos/cevizli_kasik_salatasi.jpg",
+        "price": "€ 13,90",
+    "description": "Een salade met walnoten en een mix van frisse groenten, heerlijk als bijgerecht. "
+  },
+  {
+    "name": "Avokado Salatasi",
+    "image": "img/eten_fotos/avokado_salatasi.jpg",
+        "price": "€ 14,90",
+    "description": "Een gezonde salade met avocado en een lichte dressing, vol smaak en goed voor je gezondheid."
+  },
+  {
+    "name": "Karides Salatasi",
+    "image": "img/eten_fotos/karides_salatasi.jpg",
+        "price": "€ 13,90",
+    "description": "Een frisse salade met garnalen, perfect voor liefhebbers van zeevruchten"
   }
             
             
@@ -327,11 +396,17 @@
     
         // Populate the page with the item details
         if (selectedItem) {
-            document.getElementById('food-name').textContent = selectedItem.name;
-            document.getElementById('food-price').textContent = selectedItem.price;
-            document.getElementById('food-description').textContent = selectedItem.description;
-            document.getElementById('food-image').src = selectedItem.image;
-        }
+    // Verander alle elementen met de klasse 'food-name'
+    const foodNameElements = document.querySelectorAll('.food-name');
+    foodNameElements.forEach(element => {
+        element.textContent = selectedItem.name;
+    });
+
+    document.getElementById('food-price').textContent = selectedItem.price;
+    document.getElementById('food-description').textContent = selectedItem.description;
+    document.getElementById('food-image').src = selectedItem.image;
+}
+
     </script>
       
     
@@ -417,34 +492,34 @@
           <!-- End opening time -->
           <!--betere Flicker-->
           <div class="col-md-3 col-sm-3">
-          <h3>Foto's</h3>
-          <div class="photo-grid">
-            <div class="photo">
-              <img src="img/eten_fotos/foto_1/mewsim-v100002.jpg" alt="Foto 1">
+            <h3>Foto's</h3>
+            <div class="photo-grid">
+              <div class="photo">
+                <img src="img/eten_fotos/foto_1/mewsim-v100002.jpg" alt="Foto 1">
+              </div>
+              <div class="photo">
+                <img src="img/eten_fotos/foto_1/mewsim-v100051.jpg" alt="Foto 2">
+              </div>
+              <div class="photo">
+                <img src="img/eten_fotos/foto_1/mewsim-v100052.jpg" alt="Foto 3">
+              </div>
+              <div class="photo">
+                <img src="img/eten_fotos/foto_1/mewsim-v100017.jpg" alt="Foto 4">
+              </div>
+              <div class="photo">
+                <img src="img/eten_fotos/foto_1/mewsim-v100008.jpg" alt="Foto 5">
+              </div>
+              <div class="photo overlay-container">
+                <a href="https://www.instagram.com/mewsim.osdorp/" target="_blank" data-toggle="tooltip" title="Instagram">
+                  <img src="img/eten_fotos/foto_1/mewsim-v100071.jpg" alt="Foto 6">
+                  <div class="overlay">
+                    <i class="fa fa-instagram"></i>
+                    <span>+10 foto's</span>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="photo">
-              <img src="img/eten_fotos/foto_1/mewsim-v100051.jpg" alt="Foto 2">
-            </div>
-            <div class="photo">
-              <img src="img/eten_fotos/foto_1/mewsim-v100052.jpg" alt="Foto 3">
-            </div>
-            <div class="photo">
-              <img src="img/eten_fotos/foto_1/mewsim-v100017.jpg" alt="Foto 3">
-            </div>
-            <div class="photo">
-              <img src="img/eten_fotos/foto_1/mewsim-v100008.jpg" alt="Foto 3">
-            </div>
-            <div class="photo overlay-container">
-              <a href="https://www.instagram.com/mewsim.osdorp/" target="_blank" data-toggle="tooltip" title="Instagram">
-                <img src="img/eten_fotos/foto_1/mewsim-v100071.jpg" alt="Foto 4">
-                <div class="overlay">
-                  <span>+10 foto's</span>
-                </div>
-              </a>
-            </div>
-            
           </div>
-        </div>
           
           
         </div>
@@ -459,6 +534,10 @@
   <!-- End footer -->
   <!--  scroll to top of the page-->
   <a href="#" id="scroll_up" ><i class="fa fa-angle-up"></i></a> </div>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+  </script>
 <!-- End wrapper -->
 <!-- Core JS Libraries -->
 <script src="javascripts/libs/jquery.min.js" type="text/javascript"></script>
@@ -468,7 +547,5 @@
 <script src="javascripts/libs/modernizr.js"></script>
 <!-- JS Custom Codes -->
 <script src="javascripts/custom/main.js" ></script>
-<!--mijn js bestand-->
-<script src="javascripts/custom/mijnaangepastejs.js"></script>
 </body>
 </html>

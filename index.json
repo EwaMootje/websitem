@@ -1,149 +1,188 @@
 {
   "lunch_breakfast": [
     {
-      "name": "Menemen",
-      "description": "Een pittige Turkse roerei gemaakt met tomaten, paprika en specerijen."
+      "name": "Mercimek Çorbası",
+      "price": 6.75,
+      "description": "Linzensoep, een traditioneel Turks gerecht."
     },
     {
-      "name": "Sucuklu Yumurta",
-      "description": "Gebakken eieren met Turkse sucuk (vleesworst) en tomaten."
+      "name": "Mevsim Çorbası",
+      "price": 6.75,
+      "description": "Speciale Mevsim soep."
     },
     {
-      "name": "Sigara Böreği",
-      "description": "Fritters gevuld met kaas en kruiden, vaak geserveerd als ontbijt."
+      "name": "Mevsim Salata",
+      "price": 9.50,
+      "description": "Seizoenssalade met sla, komkommer, mais, wortel en dressing."
     },
     {
-      "name": "Kahvaltı Tabağı",
-      "description": "Een traditioneel Turks ontbijt met verschillende kazen, olijven, brood, tomaten, komkommer en worst."
+      "name": "Yoghurt Bowl",
+      "price": 12.50,
+      "description": ""
     },
     {
-      "name": "Lahmacun",
-      "description": "Een dunne, knapperige pizza met gehakt, tomaat, ui en kruiden."
+      "name": "Mozzarella Caprese",
+      "price": 12.50,
+      "description": ""
     },
     {
-      "name": "Peynirli Pide",
-      "description": "Een brood gevuld met Turkse kaas en kruiden, vaak gegeten bij het ontbijt."
+      "name": "Somon Füme",
+      "price": 14.90,
+      "description": ""
     },
     {
-      "name": "Bal-Kaymak",
-      "description": "Vers brood met honing en room."
+      "name": "Akdeniz Salatası",
+      "price": 11.50,
+      "description": ""
     },
     {
-      "name": "Kumpir",
-      "description": "Een grote aardappel gevuld met boter, kaas, groenten en ham."
+      "name": "Tavuk Crouton",
+      "price": 15.90,
+      "description": ""
     },
     {
-      "name": "Menemen (zonder eieren)",
-      "description": "Tomaten en paprika's gekookt zonder eieren, een hartige optie voor ontbijt."
+      "name": "Cevizli Kaşık Salatası",
+      "price": 13.90,
+      "description": ""
     },
     {
-      "name": "Ayran",
-      "description": "Een Turkse drinkyoghurt."
+      "name": "Avokado Salatası",
+      "price": 14.90,
+      "description": ""
+    },
+    {
+      "name": "Karides Salatası",
+      "price": 13.90,
+      "description": ""
     }
   ],
   "dinner": [
     {
       "name": "Adana Kebab",
-      "image": "img/menu/dinner_1.jpg",
-      "price": "€15,00",
-      "description": "Gegrild lamsvlees kebab met specerijen en pitabrood."
-  },
-  {
-      "name": "Iskender Kebab",
-      "image": "img/menu/dinner_2.jpg",
-      "price": "€18,00",
-      "description": "Gebroken kebab geserveerd op pita met tomatensaus en yoghurt."
-  },
-  {
-      "name": "Tavuk Shish",
-      "image": "img/menu/dinner_3.jpg",
-      "price": "€20,00",
-      "description": "Gegrilde kipspies met groenten."
-  },
-  {
-      "name": "Kuzu Tandir",
-      "image": "img/menu/dinner_4.jpg",
-      "price": "€22,00",
-      "description": "Langzaam gegaard lamsschenkel met kruiden en groenten."
-  },
-  {
-      "name": "Lahmacun",
-      "image": "img/menu/dinner_5.jpg",
-      "price": "€14,00",
-      "description": "Een Turkse pizza met gehakt en groenten."
-  },
-  {
-      "name": "Köfte",
-      "image": "img/menu/dinner_6.jpg",
-      "price": "€17,00",
-      "description": "Gehaktballetjes gekruid met kruiden en geserveerd met salade."
-  },
-  {
-      "name": "Pide",
-      "image": "img/menu/dinner_7.jpg",
-      "price": "€19,00",
-      "description": "Een Turks brood met diverse toppings zoals kaas, ei en kruiden."
-  },
-  {
-      "name": "Dolma",
-      "image": "img/menu/dinner_8.jpg",
-      "price": "€21,00",
-      "description": "Gevulde druivenbladeren met rijst, kruiden en kruiden."
-  },
-  {
-      "name": "Saray Kebab",
-      "image": "img/menu/dinner_9.jpg",
-      "price": "€23,00",
-      "description": "Gebakken lamsvlees met aardappelen, wortel en groenten."
-  },
-  {
-      "name": "Tavuk Sote",
-      "image": "img/menu/dinner_10.jpg",
-      "price": "€25,00",
-      "description": "Gebakken kip met groenten en kruiden."
-  }
-
+      "price": 22.90,
+      "description": "Pittige gehaktspies van de grill."
+    },
+    {
+      "name": "Sebzeli Kebab",
+      "price": 23.90,
+      "description": ""
+    },
+    {
+      "name": "Beyti Kebab",
+      "price": 26.90,
+      "description": ""
+    },
+    {
+      "name": "Mevsim Köfte",
+      "price": 18.90,
+      "description": "Gehaktballetjes op de grill met patat."
+    },
+    {
+      "name": "Tavuk Şiş",
+      "price": 20.90,
+      "description": ""
+    },
+    {
+      "name": "Tavuk Göğsü",
+      "price": 20.90,
+      "description": ""
+    },
+    {
+      "name": "Şiş Kebab",
+      "price": 27.90,
+      "description": ""
+    },
+    {
+      "name": "Shoarma",
+      "price": 21.90,
+      "description": ""
+    },
+    {
+      "name": "Kuzu Pirzola",
+      "price": 28.90,
+      "description": ""
+    },
+    {
+      "name": "Ali Nazik",
+      "price": 27.90,
+      "description": ""
+    },
+    {
+      "name": "Mix Grill",
+      "price": 28.90,
+      "description": ""
+    },
+    {
+      "name": "Mix Grill (2 personen)",
+      "price": 52.50,
+      "description": ""
+    },
+    {
+      "name": "Mix Grill (3 personen)",
+      "price": 75.00,
+      "description": ""
+    }
   ],
   "desserts": [
     {
-      "name": "Baklava",
-      "description": "Een bladerdeeg met gehakte noten en siroop."
-    },
-    {
-      "name": "Revani",
-      "description": "Een zoete taart gemaakt van griesmeel, gegarneerd met siroop."
-    },
-    {
-      "name": "Künefe",
-      "description": "Een Turkse dessert gemaakt van kaas en baklava-deeg."
-    },
-    {
       "name": "Sütlaç",
-      "description": "Een zoete rijstepap met kaneel en suiker."
-    },
-    {
-      "name": "cheesecake (Turkish Delight)",
-      "description": "Gelatineblokjes gevuld met noten en bedekt met poedersuiker."
+      "price": 6.00,
+      "description": "Turkse rijstpudding."
     },
     {
       "name": "Kazandibi",
-      "description": "Een gebakken melkpudding."
+      "price": 6.50,
+      "description": ""
     },
     {
-      "name": "Tulumba Tatlısı",
-      "description": "Gefrituurde deegstukjes in suikersiroop."
+      "name": "Künefe",
+      "price": 8.90,
+      "description": "Traditioneel zoet gerecht met kaas en siroop."
     },
     {
-      "name": "Hurma Tatlısı",
-      "description": "Dadel-gebak gedompeld in siroop."
+      "name": "San Sebastian Cheesecake",
+      "price": 8.50,
+      "description": ""
     },
     {
-      "name": "Güllac",
-      "description": "Een dessert gemaakt van melk, walnoten en rozenblaadjes."
+      "name": "Cheesecake",
+      "price": 8.50,
+      "description": ""
     },
     {
-      "name": "Kabak Tatlısı",
-      "description": "Geroosterde pompoen met walnoten en siroop."
+      "name": "Red Velvet Cake",
+      "price": 8.50,
+      "description": ""
+    },
+    {
+      "name": "Çikolatalı Sufle",
+      "price": 8.90,
+      "description": "Chocolade lava cake."
+    },
+    {
+      "name": "Baklava Burger",
+      "price": 10.90,
+      "description": ""
+    },
+    {
+      "name": "Baklava Burger met IJs",
+      "price": 12.90,
+      "description": ""
+    },
+    {
+      "name": "Fruitschaal",
+      "price": 7.50,
+      "description": ""
+    },
+    {
+      "name": "Diverse Soorten IJs (3 bollen)",
+      "price": 8.25,
+      "description": ""
+    },
+    {
+      "name": "Bolletje Vanille IJs",
+      "price": 3.00,
+      "description": ""
     }
   ]
 }
